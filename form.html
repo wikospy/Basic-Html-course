@@ -1,0 +1,45 @@
+<!-- ## 9. Forms -->
+<!-- Forms collect named controls. Only successful controls with a `name` are submitted. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/signup" method="post">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <button type="submit">Sign up</button>
+        <h2>Gender</h2>
+        <label for="boy">Boy</label>
+        <input id="choose" name="boy" type="radio">
+        <label for="girl">Girl</label>
+        <input id="choose" name="girl" type="radio">
+        <h2>Done</h2>
+        <label for="code">Coding</label>
+        <input id="me" name="code" type="checkbox">
+        <label for="color">Choose your color</label>
+        <input id="color" name="color" type="color">
+        <label for="pasa">Enter your password</label>
+        <input type="password" name="pasa" id="passs">
+    </form>
+</body>
+
+</html>
+
+
+<!-- Input types include `text`, `number`, `email`, `password`, `tel`, `url`, `date`, `time`, `checkbox`, `radio`, `file`, -->
+<!-- `submit`, and `reset`. -->
+
+<!-- **Example:** A login form uses `email` and `password`; a profile form may use `tel` and `date`. -->
+
+<!-- **Use / do not use:** Use a real `button` for submission and a `label` for every control. Use `disabled` only when an -->
+<!-- interaction is unavailable, `readonly` when a value may be submitted but not edited. Do not rely on placeholders as -->
+<!-- labels. -->
+
+<!-- **Write yourself:** Build a contact form with name, email, phone, message, one checkbox, one radio group, submit, and -->
+<!-- reset controls. Give every submitted control a `name`. -->

@@ -1,0 +1,46 @@
+<!-- ## 8. Tables -->
+<!-- Tables represent relationships between row and column data, not layout. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <caption>Monthly expenses</caption>
+        <thead>
+            <tr>
+                <th scope="col">Month</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">January</th>
+                <td>$120</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td>$120</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
+
+
+<!-- `colspan="2"` combines columns; `rowspan="2"` combines rows. -->
+
+<!-- **Example:** An invoice uses header cells for column names and row names, plus a total in `tfoot`. -->
+
+<!-- **Use / do not use:** Use tables for tabular data and include a caption and scopes. Do not use tables for page layout. -->
+
+<!-- **Write yourself:** Create a three-column grade table with a caption, header row, body rows, and a footer average. Use -->
+<!-- one `colspan`. -->
